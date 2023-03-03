@@ -9,3 +9,33 @@ using sequence diagram to represent the flow of displaying product details, star
 # b. Create Order (Activity Diagram)
 
 ![banner](./assets/Create%20Order%20Activity%20Diagram.png)
+
+## Algorithm
+
+1. Input the product details
+2. The system will check the availability of the product
+3. If no, the user will be directing to customer service
+4. If yes will continue to calculate the price
+5. Then order will be created, while the system also reducing the stock that will be purchase by user
+
+## Pseudocode
+
+```pseudocode
+
+funtion createOrder(products)
+1. Input an array of product objects
+2. check product availability
+3. if product is available  continue to calculate the price
+4. initialize totalPrice=0
+5. Loop through each product in the array
+   a. add the price to the totalPrice from each product
+   b. Reduce 1 of the quantity from each products
+6. Return consist of totalPrice including updated stock of the product
+
+```
+
+## Complexity Analysis
+
+# c. Architecture Diagram
+
+![banner](./assets/Architecture%20Diagram.png)
